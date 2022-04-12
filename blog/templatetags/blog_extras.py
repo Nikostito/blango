@@ -2,7 +2,7 @@
 from django.contrib.auth import get_user_model
 from django import template
 from blog.models import Post
-from django.utils.html import escape
+from django.utils.html import escape, format_html
 from django.utils.safestring import mark_safe
 import logging
 user_model = get_user_model()
