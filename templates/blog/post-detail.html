@@ -1,8 +1,10 @@
 {% extends "base.html" %}
+
 {% block content %}
 <h2>{{ post.title }}</h2>
 <div class="row">
 <div class="col">
+{% include "blog/post-comments.html" %}
 {% include "blog/post-byline.html" %}
 </div>
 </div>
