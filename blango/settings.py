@@ -15,6 +15,7 @@ from configurations import Configuration, values
 import dj_database_url
 
 class Dev(Configuration):
+    AUTH_USER_MODEL = "blango_auth.User"
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
@@ -83,6 +84,7 @@ class Dev(Configuration):
         'django.contrib.staticfiles',
         "crispy_forms",
         "crispy_bootstrap5",
+        "blango_auth",
         'blog',
         "debug_toolbar"
     ]
